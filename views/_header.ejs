@@ -1,0 +1,50 @@
+<header>
+
+  <script>
+    const quizbee = new Audio("/media/quizbee.mp3");
+  </script>
+
+<!-- onclick="quizbee.play()" -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white rounded">
+    <a class="navbar-brand" href="/"><img src="https://i.pinimg.com/564x/da/e9/40/dae940d48c8667e53df84e4bd2f50e71.jpg" width = "60" height="50" class="d-inline-block align-top" alt=""> QuizBee!</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-linkHome " href="/"> 🏠 Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-linkQuizzes" href="/quizzes"> 📝 Quizzes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-linkResults" href="/submitQuizzes"> ❓ Results</a>
+        </li>
+        <div class ="d-flex justify-content-end">
+        <% if (!user_id) { %>
+          <li class="nav-item">
+            <a href="/register" class="btnPrimary">📋 Create Account</a>
+          </li>
+          <li class="nav-item">
+            <a href="/login" class="btnSecondary ">🔏 Login</a>
+          </li>
+        <% } else { %>
+          <li class="nav-item">
+            <a href="/logout" class="btnSecondary">🔓 Logout</a>
+          </li>
+        <% } %>
+        </div>
+      </ul>
+    </div>
+  </nav>
+</header>

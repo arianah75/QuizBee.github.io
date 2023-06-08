@@ -1,0 +1,160 @@
+body {
+  display: flow-root;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  min-height: 100vh;
+  font-family: "Bungee", "cursive";
+
+  background-color: #ffe100;
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+
+  main {
+    h1 {
+      margin: 10vh 10vw;
+      padding: 0.1em;
+      border-radius: 25px;
+    }
+  }
+  .greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 5px;
+    font-family: "Bungee", "cursive";
+    font-size: 3em;
+    white-space: nowrap;
+    transition: 0.8s;
+    animation: fadeIn 0.7s ease-in;
+    -webkit-animation: fadeIn 0.7s;
+    -moz-animation: fadeIn 0.7s;
+    -o-animation: fadeIn 0.7s;
+    -ms-animation: fadeIn 0.7s;
+  }
+  div.bee:hover{
+    animation: wiggle 1s linear infinite;
+  }
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+.greeting:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.quiz-container {
+  /* Your existing styles here */
+
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.quiz-container:hover {
+  background: #f0f0f0;
+}
+
+#createQuizButton {
+  background-color: #992409;
+  border-color: #992409;
+  color: #f0f0f0;
+  width: 50%;
+  height: 8em;
+  font-size: 1.5em;
+}
+
+#displayQuizzesButton {
+  background-color: #992409;
+  border-color: #992409;
+  color: #f0f0f0;
+  width: 50%;
+  height: 8em;
+  font-size: 1.5em;
+}
+
+.text-center {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.text-center2 {
+  text-align: center;
+}
+
+#createQuizButton:hover {
+  color: #ffe100;
+  box-shadow: 5px 8px 5px #484639;
+}
+
+#displayQuizzesButton:hover {
+  color: #ffe100;
+  box-shadow: 5px 8px 5px #484639;
+}

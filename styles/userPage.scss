@@ -1,0 +1,77 @@
+body main h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 10vw;
+  padding: 0.1em;
+  border-radius: 25px;
+  color: #000000;
+  font-size: 3em;
+}
+#email {
+  font-family: 'Bubblegum Sans', cursive;
+  font-weight: 600;
+}
+
+#password {
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+#name {
+  font-family: 'Bubblegum Sans', cursive;
+  font-weight: 600;
+
+
+}
+div.container {
+  animation: fadeIn 0.7s ease-in;
+  -webkit-animation: fadeIn 0.7s;
+  -moz-animation: fadeIn 0.7s;
+  -o-animation: fadeIn 0.7s;
+  -ms-animation: fadeIn 0.7s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

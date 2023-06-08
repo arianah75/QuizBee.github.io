@@ -1,0 +1,57 @@
+<!-- register.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Registration Page</title>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Bungee&family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/nav-bar.css">
+  <link rel="stylesheet" href="/styles/userPage.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script defer src="/scripts/app.js"></script>
+
+  <script>
+    const quizbee = new Audio("/media/quizbee.mp3");
+  </script>
+
+</head>
+<body>
+  <%- include('./_header.ejs') %>
+  <main>
+    <div class="container">
+      <h1>Create an Account</h1>
+      <form action="/register" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button onclick="quizbee.play()" type="submit" class="btnPrimary">Register</button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
